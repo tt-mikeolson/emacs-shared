@@ -99,7 +99,7 @@ We'll build from scratch, since no PPAs have consistently had latest version rel
 * Uninstall any versions of Emacs that were previously installed by `apt` or `dpkg`.
 * Edit `/etc/apt/sources.list` and uncomment all `#deb-src` lines that match `deb` lines and run `sudo apt update`.
 * Follow these instructions, derived from [this post](https://practical.li/blog/posts/build-emacs-28-on-ubuntu/):
-  ```sh
+```sh
 sudo apt build-dep -y emacs
 sudo apt install libjansson4 libjansson-dev gnutls-bin
 cd build/emacs
@@ -109,7 +109,7 @@ cd emacs-28.2
 ./configure
 make -j$(proc)
 sudo make install
-  ```
+```
 
 ## Inconsolata Font
 
